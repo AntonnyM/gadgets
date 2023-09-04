@@ -1,10 +1,19 @@
-<?php include('header.php'); ?>
+<?php
+session_start();
+
+if (!isset($_SESSION['loggedin']) ||$_SESSION['loggedin'] !== true) {
+    header("location: login.php");
+    exit;
+}
+ include('header.php'); 
+ 
+ ?>
 
 <body>
  <style>
       body {
-		  background-image: url(needforspeed_background.png);
-		 		 
+		background-color:#5a7ae2b9;
+	  }	 
     </style>
 <?php include('navbar.php'); ?>
 <div class="container">
@@ -58,7 +67,7 @@
 											<img src="<?php if(empty($pfrow['photo'])){echo "upload/noimage.jpg";} else{echo $pfrow['photo'];} ?>" height="225px;" width="100%">
 										</div>
 										<div class="panel-footer text-center">
-											&#x20B1; <?php echo number_format($pfrow['price'], 2); ?>
+											<span>KES<span> <?php echo number_format($pfrow['price'], 2); ?>
 										</div>
 									</div>
 								</div>
@@ -100,7 +109,7 @@
 											<img src="<?php if($prow['photo']==''){echo "upload/noimage.jpg";} else{echo $prow['photo'];} ?>" height="225px;" width="100%">
 										</div>
 										<div class="panel-footer text-center">
-											&#x20B1; <?php echo number_format($prow['price'], 2); ?>
+											 <?php echo number_format($prow['price'], 2); ?>
 										</div>
 									</div>
 								</div>

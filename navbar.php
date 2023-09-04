@@ -25,6 +25,7 @@
             <li><a href="category.php">Category</a></li>
           </ul>
         </li>
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
