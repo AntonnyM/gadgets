@@ -20,10 +20,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                   session_start();
                   $_SESSION['loggedin'] = true;
                   $_SESSION['username'] = $username;
+                  $_SESSION['user_access_privileges'] = $row['user_access_privileges'];
                   header("location: index.php");
               } 
               else{
-                // echo "Invalid Credentials";
                 $invalid = 1;
               }
           }

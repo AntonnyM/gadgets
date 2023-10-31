@@ -1,4 +1,9 @@
-<?php include('header.php'); ?>
+<?php
+session_start();
+include('header.php');
+include('authorizeaccess.php');
+?>
+
 <body>
 <?php include('navbar.php'); ?>
 <div class="container">

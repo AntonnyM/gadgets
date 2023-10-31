@@ -101,6 +101,7 @@ if (!isset($_SESSION['loggedin']) ||$_SESSION['loggedin'] !== true) {
 							if($inc == 1) echo "<div class='row'>"; 
 							?>
 								<div class="col-md-3">
+									
 									<div class="panel panel-default">
 										<div class="panel-heading text-center">
 											<b><?php echo $prow['productname']; ?></b>
