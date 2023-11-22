@@ -21,18 +21,6 @@ $cartItemCount = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="index.php">Products</a></li>
-                <li><a href="order.php">Order</a></li>
-                <li><a href="sales.php">Sales</a></li>
-                <li>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products & Category Update List <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="product.php">Products</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="category.php">Category</a></li>
-                    </ul>
-                </li>
-                <li><a href="logout.php">Logout (<?=$name ?>)</a></li>
                 <!-- Cart Icon and Item Count -->
                 <li>
                     <a href="cart.php">
@@ -40,6 +28,7 @@ $cartItemCount = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                         Cart <span class="badge"><?= $cartItemCount ?></span>
                     </a>
                 </li>
+                <li><a href="logout.php">Logout (<?=$name ?>)</a></li> 
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
