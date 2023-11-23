@@ -9,7 +9,6 @@ include('header.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <title>Document</title>
     <style>
         body {
@@ -69,30 +68,32 @@ include('header.php');
     </style>
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Computer Capital</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.php">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="register.php">register</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Computer Capital</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="register.php">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <!-- Add more navigation links as needed -->
             </ul>
-        </div>
-    </nav>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
 
 <img src="img/comp.jpg" width="100%" style="margin-top:-20px;" height="60%" alt="IMG">
     <div class="welcome-section">
@@ -114,36 +115,42 @@ include('header.php');
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <img src="img/PSP Headphone.jpg" width="86%" height="60%" alt="earphone">
+                        <a href="login.php">
+                           <img src="img/PSP Headphone.jpg" width="86%" height="60%" alt="earphone"> 
+                        </a>
                         <!-- Featured Product Image -->
                     </div>
                     <div class="panel-footer text-center">
-                        <h4 style="color:black;">Product Name</h4>
-                        <p style="color:black;">$Price</p>
+                        <h4 style="color:black;">PSP Headphone</h4>
+                        <p style="color:black;">KES 674.00</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
+                    <a href="login.php">
                         <img src="img/psp-earphone-2000-series.jpg" alt="earphone">
+                    </a>
                         <!-- Featured Product Image -->
                     </div>
                     <div class="panel-footer text-center">
-                        <h4 style="color:black;">Product Name</h4>
-                        <p style="color:black;">$Price</p>
+                        <h4 style="color:black;">psp-earphone-2000-series</h4>
+                        <p style="color:black;">KES 567.00</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
+                    <a href="login.php">
                         <img src="img/PSP 1000 USB.png" width="96%"  alt="earphone">
+                    </a>
                         <!-- Featured Product Image -->
                     </div>
                     <div class="panel-footer text-center">
-                        <h4 style="color:black;">Product 0Name</h4>
-                        <p style="color:black;">$Price</p>
+                        <h4 style="color:black;">PSP 1000 USB</h4>
+                        <p style="color:black;">KES 189.00</p>
                     </div>
                 </div>
             </div>

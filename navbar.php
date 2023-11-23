@@ -15,7 +15,7 @@ $cartItemCount = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php"><b>ElectroBidhaa</b></a>
+            <a class="navbar-brand" href="index.php"><b>Computer capital</b></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

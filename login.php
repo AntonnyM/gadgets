@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                   if ($row['user_access_privileges']=="admin") {
                     header("location: dashboard.php");
                   }else {
-                    header("location:index.php");
+                    header("location:admin.php");
                   }
                   
               } 

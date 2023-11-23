@@ -61,11 +61,12 @@ if (!isset($_SESSION['loggedin']) ||$_SESSION['loggedin'] !== true) {
 								<div class="col-md-3">
 									<div class="panel panel-default">
 										<div class="panel-heading text-center">
-											<a href="product_page.php?id=<?php echo $pfrow['productid']; ?>"><b><?php echo $pfrow['productname']; ?></b></a>
+											<a href="product_page.php?id=<?php echo $pfrow['productid'];?>"><b><?php echo $pfrow['productname']; ?></b>
 										</div>
 										<div class="panel-body">
 											<img src="<?php if(empty($pfrow['photo'])){echo "upload/noimage.jpg";} else{echo $pfrow['photo'];} ?>" height="225px;" width="100%">
 										</div>
+										</a>
 										<div class="panel-footer text-center">
 											<span>KES<span> <?php echo number_format($pfrow['price'], 2); ?>
 										</div>
@@ -104,11 +105,12 @@ if (!isset($_SESSION['loggedin']) ||$_SESSION['loggedin'] !== true) {
 									
 									<div class="panel panel-default">
 										<div class="panel-heading text-center">
-											<b><?php echo $prow['productname']; ?></b>
+										<a href="product_page.php?id=<?php echo $pfrow['productid']; ?>"><b><?php echo $prow['productname']; ?></b>
 										</div>
 										<div class="panel-body">
 											<img src="<?php if($prow['photo']==''){echo "upload/noimage.jpg";} else{echo $prow['photo'];} ?>" height="225px;" width="100%">
 										</div>
+										</a>
 										<div class="panel-footer text-center">
 											 <?php echo number_format($prow['price'], 2); ?>
 										</div>

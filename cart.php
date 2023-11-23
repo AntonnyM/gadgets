@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once('header.php');
-require_once('navbar.php');
+require_once('navbar2.php');
 ?>
 
 <div style="padding: 35px;"></div>
