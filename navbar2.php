@@ -15,32 +15,20 @@ $cartItemCount = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php"><b>Computer capital</b></a>
+            <a class="navbar-brand" href="dashboard.php"><b>Computer capital</b></a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="index.php">Products</a></li>
-                <li><a href="order.php">Order</a></li>
-                <li><a href="sales.php">Sales</a></li>
-                <li>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products & Category Update List <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="product.php">Products</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="category.php">Category</a></li>
-                    </ul>
-                </li>
-                <li><a href="logout.php">Logout (<?=$name ?>)</a></li>
+            <ul class="nav navbar-nav ml-auto"> <!-- Use ml-auto to push items to the right -->
                 <!-- Cart Icon and Item Count -->
-                <li>
+                <li class="mr-3"> <!-- Use mr-3 for right margin spacing -->
                     <a href="cart.php">
                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                         Cart <span class="badge"><?= $cartItemCount ?></span>
                     </a>
                 </li>
+                <li><a href="logout.php">Logout (<?=$name ?>)</a></li> 
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+    </div>
 </nav>

@@ -8,7 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-      // $sql = "Select * from users where username='$username' AND password='$password'";
       $sql = "SELECT * FROM `users` WHERE username='$username'";
       $result = mysqli_query($conn, $sql);
       $num = mysqli_num_rows($result);
@@ -21,7 +20,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                   $_SESSION['loggedin'] = true;
                   $_SESSION['username'] = $username;
                   $_SESSION['user_access_privileges'] = $row['user_access_privileges'];
-                  header("location: index.php");
+                  if ($row['user_access_privileges']=="admin") {
+                    header("location: dashboard.php");
+                  }else {
+                    header("location:admin.php");
+                  }
+                  
               } 
               else{
                 $invalid = 1;
